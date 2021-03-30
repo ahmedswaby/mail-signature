@@ -16,8 +16,6 @@
         align-items: center;
     }
     .avatar {
-        background-image: url(./me.jpeg);
-        background-size: cover;
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -44,7 +42,10 @@
         flex: 0 0 25%;
         max-width: 25%;
         text-decoration: none;
-        font-size: 18px
+        font-size: 18px;
+        width: 20px;
+        height: 20px;
+        display: flex;
     }
     .social a:is(:hover, :visited) {
         color: darkblue;
@@ -54,22 +55,29 @@
 </style>
 <body>
 
-    <div class="avatar" alt=""></div>
+    <!-- <div class="avatar" alt=""></div> -->
+    <img src="./imgs/me.jpeg" class="avatar" alt="">
     <div class="info">
         <b>Ahmed Sawaby</b>
         <code>Frontend Engineer</code>
         <div class="social">
             <a href="tel:+201030443004">
-                <i class="icon-phone"></i>
+                <!-- <i class="icon-phone"></i> -->
+                <img src="./imgs/phone.png" alt="">
+
             </a>
             <a href="https://www.linkedin.com/in/ahmed-khaled-822214170/" target="_blank">
-                <i class="icon-linkedin"></i>
+                <!-- <i class="icon-linkedin"></i> -->
+                <img src="./imgs/linkedin.png" alt="">
             </a>
-             <a href="https://github.com/ahmedswaby" target="_blank">
+             <!-- <a href="https://github.com/ahmedswaby" target="_blank">
                 <i class="icon-github"></i>
-            </a>
+                <img src="./imgs/github.png" alt="">
+
+            </a> -->
             <a href="https://twitter.com/ahmedswaby_" target="_blank">
-                <i class="icon-twitter"></i>
+                <img src="./imgs/twitter.png" alt=""> 
+                <!-- <i class="icon-twitter"></i> -->
             </a>
         </div>
 
