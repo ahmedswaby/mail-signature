@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <title>Mail signature</title>
-</head>
-<style>
-    body {
-        background: #FFF;
-        display: flex;
-        align-items: center;
-    }
-    .avatar {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-    .info {
-        display: flex;
-        flex-direction: column;
-    }
-    b {
-        font-size: 21px;
-        font-family: 'Dancing Script', cursive;
-    }
-    code {
-        margin-top: 5px;
-    }
-    .social {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .social a {
-        color: #000;
-        flex: 0 0 25%;
-        max-width: 25%;
-        text-decoration: none;
-        font-size: 18px;
-        width: 20px;
-        height: 20px;
-        display: flex;
-    }
-    .social a:is(:hover, :visited) {
-        color: darkblue;
-        text-decoration: none;
-
-    } 
-</style>
-<body>
-
-    <!-- <div class="avatar" alt=""></div> -->
-    <img src="./imgs/me-new.jpeg" class="avatar" alt="">
-    <div class="info">
-        <b>Ahmed Sawaby</b>
-        <code>Frontend Engineer</code>
-        <div class="social">
-            <a href="tel:+201030443004">
-                <!-- <i class="icon-phone"></i> -->
-                <img src="./imgs/phone.png" alt="">
-
-            </a>
-            <a href="https://www.linkedin.com/in/ahmed-khaled-822214170/" target="_blank">
-                <!-- <i class="icon-linkedin"></i> -->
-                <img src="./imgs/linkedin.png" alt="">
-            </a>
-             <!-- <a href="https://github.com/ahmedswaby" target="_blank">
-                <i class="icon-github"></i>
-                <img src="./imgs/github.png" alt="">
-
-            </a> -->
-            <a href="https://twitter.com/ahmedswaby_" target="_blank">
-                <img src="./imgs/twitter.png" alt=""> 
-                <!-- <i class="icon-twitter"></i> -->
-            </a>
-        </div>
-
-
-    </div>
-
-
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Mail signature</title>
+	</head>
+	<style>
+		body {
+			/* background: #fff; */
+			/* display: flex;
+        align-items: center; */
+		}
+		.avatar {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin-right: 20px;
+		}
+		.info {
+            float: right;
+		}
+        .float {
+            float: left;
+        }
+        .clearfix {
+            clear: both;
+        }
+		b {
+            display: block;
+			font-size: 21px;
+			font-family: 'Dancing Script', cursive;
+		}
+		code {
+			margin-top: 5px;
+		}
+		.social {
+			margin-top: 10px;
+		}
+		.social a {
+			color: #000;
+			flex: 0 0 25%;
+			max-width: 25%;
+			text-decoration: none;
+			font-size: 18px;
+			width: 20px;
+			height: 20px;
+			/* display: flex; */
+		}
+		.social a:is(:hover, :visited) {
+			color: darkblue;
+			text-decoration: none;
+		}
+	</style>
+	<body>
+		<div>
+			<!-- <div class="avatar" alt=""></div> -->
+			<div class="float">
+			<img src="./imgs/me-new.jpeg" class="avatar" alt="" />
+				<b>Ahmed Sawaby</b>
+				<code>Frontend Engineer</code>
+                <!-- <div class="clearfix"></div> -->
+				<!-- <div class="social">
+					<a href="tel:+201030443004">
+						<i class="icon-phone"></i>
+						<img src="./imgs/phone.png" alt="" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/ahmed-khaled-822214170/"
+						target="_blank"
+					>
+						<i class="icon-linkedin"></i>
+						<img src="./imgs/linkedin.png" alt="" />
+					</a>
+					<a href="https://github.com/ahmedswaby" target="_blank">
+                        <i class="icon-github"></i>
+                        <img src="./imgs/github.png" alt="">
+                    </a>
+					<a href="https://twitter.com/ahmedswaby_" target="_blank">
+						<img src="./imgs/twitter.png" alt="" />
+						<i class="icon-twitter"></i>
+					</a>
+				</div> -->
+			</div>
+		</div>
+	</body>
 </html>
